@@ -4,8 +4,7 @@ with open("README.md", mode="r", encoding="utf-8") as readme_file:
     readme = readme_file.read()
 
 optional_packages = {
-    "tf" : ['tensorflow>=2.2.0', 'tensorflow-text', 'tensorflow-hub'],
-    "gpu": ['faiss-gpu']
+    "tf" : ['tensorflow>=2.2.0', 'tensorflow-text', 'tensorflow-hub']
 }
 
 setup(
@@ -24,7 +23,7 @@ setup(
     install_requires=[
         'sentence-transformers',
         'pytrec_eval',
-        'faiss_cpu; "gpu" not in extra',
+        'faiss-gpu',
         'elasticsearch==7.9.1',
         'datasets'
     ],
