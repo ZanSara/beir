@@ -24,7 +24,7 @@ setup(
     install_requires=[
         'sentence-transformers',
         'pytrec_eval',
-        'faiss_cpu',
+        'faiss_cpu; "gpu" not in extra',
         'elasticsearch==7.9.1',
         'datasets'
     ],
